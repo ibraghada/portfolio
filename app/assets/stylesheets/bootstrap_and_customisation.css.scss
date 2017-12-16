@@ -1,0 +1,46 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+
+h1{
+  font-family: 'Questrial', sans-serif;
+  font-size: 50px;
+  color: white;
+
+}
+
+body{
+  background: url("IMG_1504_Fotor.jpg");
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 500px;
+  margin: 100px auto;
+  padding: 30px;
+  background: grey;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 50px;
+  text-align: center;
+  align-content: center;
+  color: yellow;
+}
+
+.image{
+  margin-left: -80px;
+  margin-top: -50px;
+  align-content: center;
+  text-align: center;
+}
+
+.social{
+  margin-bottom: 20px;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  align-content: center;
+  text-align: center;
+}
