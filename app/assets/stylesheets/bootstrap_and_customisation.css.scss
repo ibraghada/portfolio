@@ -48,7 +48,6 @@ body {
 }
 @media only screen and (max-width: 479px) {
   .container {
-    width: 500px;
     height: 90vh;
     margin-left: 10vh;
     background: grey;
@@ -67,7 +66,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 150vh;
+    height: 160vh;
   }
 
   p {
