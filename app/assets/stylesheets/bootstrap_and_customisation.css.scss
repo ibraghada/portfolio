@@ -2,25 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 
-@mixin breakpoint($point) {
-  @if $point == large {
-    @media (min-width: 64.375em) { @content; }
-  }
-  @else if $point == medium {
-    @media (min-width: 50em) { @content; }
-  }
-  @else if $point == small {
-    @media (min-width: 37.5em)  { @content; }
-  }
-}
-
-.page-wrap {
-  width: 75%;
-  @include breakpoint(large) { width: 60%; }
-  @include breakpoint(medium) { width: 80%; }
-  @include breakpoint(small) { width: 95%; }
-}
-
 
 
 h1{
@@ -36,6 +17,15 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body{
+    background: url("IMG_8790.jpg");
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
 
 .container {
   width: 500px;
@@ -50,25 +40,23 @@ body{
   font-style: normal;
   color: #DDDDDD;
   align-content: center;
-
-  .page-wrap {
-    width: 75%;
-  }
-  @media (min-width: 64.375em) {
-    .page-wrap {
-      width: 60%;
+}
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .container {
+      width: 500px;
+      margin: 100px auto;
+      padding: 30px;
+      background: grey;
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 50px;
+      text-align: center;
+      font-size: 17px;
+      font-family: Cabin, sans-serif;
+      font-style: normal;
+      color: #DDDDDD;
+      align-content: center;
     }
-  }
-  @media (min-width: 50em) {
-    .page-wrap {
-      width: 80%;
-    }
-  }
-  @media (min-width: 37.5em) {
-    .page-wrap {
-      width: 95%;
-    }
-  }
+    
 }
 
 .image{
