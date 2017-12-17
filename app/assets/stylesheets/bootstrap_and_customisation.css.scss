@@ -2,13 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 
-@media screen and (max-width: 479px){
-  .container{
-    width: 320px;
-    height: inherit;
-  }
-}
-
 h1 {
   font-family: 'Questrial', sans-serif;
   font-size: 52px;
@@ -52,4 +45,33 @@ body {
   padding-left: 30px;
   align-content: center;
   text-align: center;
+}
+@media only screen and (max-width: 479px) {
+  .container {
+    width: 500px;
+    height: 94vh;
+    margin-left: 10px;
+    background: grey;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 17px;
+    font-family: Cabin, sans-serif;
+    font-style: normal;
+    color: #DDDDDD;
+    align-self: center;
+  }
+
+  body {
+    display: flex;
+    background: url("IMG_8790.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  p {
+    font-size: 20px;
+  }
 }
