@@ -1,6 +1,7 @@
 Portfolio link [Live on heroku](https://portfolio-ghada.herokuapp.com)
 # README
-** Exploring RoR ``Ruby on Rails``**
+
+**Exploring RoR** ``Ruby on Rails``
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
