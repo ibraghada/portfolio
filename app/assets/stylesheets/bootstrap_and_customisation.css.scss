@@ -2,6 +2,44 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 64.375em) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 50em) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: 37.5em)  { @content; }
+  }
+}
+
+.page-wrap {
+  width: 75%;
+  @include breakpoint(large) { width: 60%; }
+  @include breakpoint(medium) { width: 80%; }
+  @include breakpoint(small) { width: 95%; }
+}
+
+.page-wrap {
+  width: 75%;
+}
+@media (min-width: 64.375em) {
+  .page-wrap {
+    width: 60%;
+  }
+}
+@media (min-width: 50em) {
+  .page-wrap {
+    width: 80%;
+  }
+}
+@media (min-width: 37.5em) {
+  .page-wrap {
+    width: 95%;
+  }
+}
+
 h1{
   font-family: 'Questrial', sans-serif;
   font-size: 52px;
@@ -14,14 +52,6 @@ body{
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-    
-    @media only screen and (max-width: 770px){
-      background: url("IMG_8790.jpg");
-      background-size:cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
 }
 
 .container {
