@@ -4,7 +4,7 @@
 
 h1 {
   font-family: 'Questrial', sans-serif;
-  font-size: 52px;
+  font-size: 50px;
   color: white;
 }
 
@@ -17,22 +17,23 @@ body {
 }
 
 .container {
-  width: 500px;
-  margin: 100px auto;
+  width: 470px;
+  margin-left: 120px;
+  margin-top: 90px;
   padding: 30px;
   background: grey;
   background-color: rgba(0,0,0,0.6);
   border-radius: 50px;
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   font-family: Cabin, sans-serif;
   font-style: normal;
-  color: #DDDDDD;
+  color: #778899;
   align-content: center;
 }
 
 .image {
-  margin-left: -90px;
+  margin-left: -105px;
   margin-top: -50px;
   align-content: center;
   text-align: center;
